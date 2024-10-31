@@ -1,0 +1,56 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Game | My First Typing Game with JavaScript</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.jpg" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+     <!-- Main JS -->
+     <script type="module" src="script.js"></script>
+  </head>
+  <body class="container">
+    <header>
+      <nav class="reset-btn">
+        <div class="reset-div" id="reset-div">
+          <p id="reset-msg">reset typing records</p>
+          <button id="reset">
+            <i class="ri-reset-left-fill"></i>
+          </button>
+        </div>
+      </nav>
+      <h1 id="welcome">Welcome to typing game!</h1>
+      <h1><time id="timer" class="timer none" datetime=""></time></h1>
+    </header>
+    <div class="quotes">
+      <div>
+        <p id="prompt_start">
+          Practice your typing skills with a quote from <strong>Professor Dumbledore</strong>. <br /><br>
+          Click the <strong>Start button</strong> to begin!
+        </p>
+        <p id="prompt_again" class="none">
+          Click the <strong>Start button</strong> to play again!
+        </p>
+        <p id="quote" class="quote"></p>
+      </div>
+      <!-- This will display a random quote-->
+      <p id="message"></p>
+      <!-- This will display any status messages -->
+    </div>
+    <div class="input">
+      <form action="" class="form">
+        <input
+          type="text"
+          aria-label="current word"
+          id="typed-value"
+          class="form-input"
+        />
+      </form>
+      <button type="button" id="start" class="form-btn">Start</button>
+    </div>
+  </body>
+</html>
